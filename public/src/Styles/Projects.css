@@ -1,0 +1,66 @@
+.projects_circleOne{
+    width: 250px;
+    height: 250px;
+    background: var(--circle-one);
+    right: 0;
+    bottom: 0;
+}
+
+.projects_circleThree{
+    width: 200px;
+    height: 200px;
+    background: var(--circle-two);
+    top: 0;
+    left: 0;
+}
+
+.projectsContainer{
+    row-gap: 2rem;
+}
+
+.projectImg{
+
+    justify-self: center;
+
+    box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.projectImg img{
+    width: 350px;
+    height: 200px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.projectImg .git{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  bottom: 10%;
+  background-color: var();
+  font-size: 1.5rem;
+  visibility: hidden;
+  
+}
+.projectImg:hover .git{
+    visibility: visible;
+}
+
+.projectImg img:hover{
+    transform: scale(1.3);
+    
+}
+
+
+@media screen and (min-width: 768px){
+    .projectsContainer{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+       column-gap: 2rem;
+    
+    }
+
+    
+}
